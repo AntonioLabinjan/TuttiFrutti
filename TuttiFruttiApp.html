@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TuttiFrutti</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <center><h1>TuttiFrutti</h1></center>
+
+<!-- Startno stanje skladišta se odnosi na vlastitu proizvodnju, a ne na kupljene proizvode i iz tog razloga se za njih ne prati cijena -->
+    <h2>Startno stanje skladišta</h2>
+    <input type="text" id="voce" placeholder="Voće">
+    <input type="number" id="kolicina" placeholder="Količina">
+    <button onclick="dodajNaSkladiste()">Dodaj na skladište</button>
+
+    <h2>Nabava</h2>
+    <input type="text" id="nabava_voce" placeholder="Voće">
+    <input type="number" id="nabava_kolicina" placeholder="Količina">
+	<input type="number" id="nabava_cijena" placeholder="Nabavna cijena">
+    <button onclick="nabavi()">Nabavi</button>
+
+    <h2>Prodaja</h2>
+    <input type="text" id="prodaja_voce" placeholder="Voće">
+    <input type="number" id="prodaja_kolicina" placeholder="Količina">
+	<input type="number" id="prodaja_cijena" placeholder="Prodajna cijena">
+    <button onclick="prodaj()">Prodaj</button>
+
+    <h2>Skladište</h2>
+    <div id="skladiste"></div>
+
+    <h2>Prodajni računi</h2>
+    <div id="racuni"></div>
+
+    <script src="skladisteFinal.js"></script>
+</body>
+</html>
